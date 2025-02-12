@@ -1,0 +1,47 @@
+.second {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bs-monument-background);
+    color: var(--bs-service-color);
+    padding: 5% 0 8% 0;
+    
+
+    .bg-swich {
+        background: linear-gradient(180deg, rgba(52,52,52,0) 0%, 
+      rgba(39,39,39,0.6) 50%,
+      rgba(39,39,39,1) 100%);
+    }
+    
+    .services-title {
+        .title {
+            font-size: 35px;
+            opacity: 0;
+            transition: 1s ease;
+        }
+
+        ._active {
+            opacity: 1;
+            transition: 1s ease;
+        }
+    }
+
+    .services {
+        display: flex;
+        font-size: 25px;
+        padding: 10% 0 5%;
+        opacity: 0;
+        transition: 1s ease;
+    }
+
+    ._active {
+        opacity: 1;
+        transition: 1.2s ease;
+    }
+
+    .services._active {
+        opacity: 1;
+        transition: 1.2s ease 0.4s;
+    }
+}

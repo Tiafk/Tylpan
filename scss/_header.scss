@@ -1,0 +1,50 @@
+.header {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 70px;
+    opacity: 0;
+    transition: 1s ease;
+    z-index: 100;
+
+    .container {
+        li {
+            user-select: none;
+            list-style-type: none;
+            cursor: pointer;
+
+            .monum {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            a {
+                display: flex;
+                text-decoration: none;
+                font-size: 20px;
+                color: var(--bs-nav-color);
+                transition: .2s ease;
+
+                &:hover {
+                    transition: .2s ease;
+                    transform: scale(1.1);
+                    text-shadow: 1px 10px 20px black;
+                }
+            }
+            
+        }
+    }
+}
+
+._active {
+    transition: 1.5s ease;
+    opacity: 1;
+}
+
+.header._active {
+    transition: 1.5s ease 0.5s;
+    opacity: 1;
+}
